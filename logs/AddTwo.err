@@ -1,0 +1,3 @@
+--> executable follows <--
+OMP_NUM_THREADS=1   python3 -m pipeline AddTwo   --numbers=./outputs/numbers.txt   --config=./config.yml   --sum2=./outputs/sum2.txt 
+--> end executable <--

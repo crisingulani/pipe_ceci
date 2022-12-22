@@ -1,0 +1,6 @@
+Executing stage: CreateNumbers @ 2022-12-20 17:45:15.655324
+Here is my configuration : {debug:True,rows_number:10,range:[100, 999],name:CreateNumbers,stage_name:CreateNumbers,dp0_train:./inputs/dp0_train_random.csv,numbers:./outputs/numbers.txt,config:./config.yml,mpi:False,pdb:False,cprofile:,memmon:0,}
+Filename:  ./inputs/dp0_train_random.csv
+Writing to outputs/inprogress_numbers.txt
+Last line: 225
+Stage complete: CreateNumbers @ 2022-12-20 17:45:15.655521 took 0.00 minutes

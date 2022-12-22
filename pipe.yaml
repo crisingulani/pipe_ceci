@@ -1,0 +1,35 @@
+modules: pipeline
+# python_paths: /home/singulani/projects/pipe_rail
+
+launcher:
+    name: parsl
+    interval: 3
+
+#site:
+#    name: local
+    # max_threads: 6
+    # mpi_command: /home/singulani/.openmpi/bin/mpirun -n
+
+stages:
+    - name: CreateNumbers
+      nprocess: 1
+    - name: AddTwo
+      nprocess: 1
+    - name: WLGCCov
+      nprocess: 3
+    
+inputs:
+    dp0_train: ./inputs/dp0_train_random.csv
+
+# Overall configuration file 
+config: ./config.yml
+
+# If all the outputs for a stage already exist then do not re-run that stage
+resume: False
+
+# Put all the output files in this directory:
+output_dir: ./outputs
+
+# Put the logs from the individual stages in this directory:
+log_dir: ./logs
+

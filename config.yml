@@ -1,0 +1,6 @@
+global:
+    debug: True
+
+CreateNumbers: 
+    rows_number: 10
+    range: [100, 999]

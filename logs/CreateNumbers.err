@@ -1,0 +1,3 @@
+--> executable follows <--
+OMP_NUM_THREADS=1   python3 -m pipeline CreateNumbers   --dp0_train=./inputs/dp0_train_random.csv   --config=./config.yml   --numbers=./outputs/numbers.txt 
+--> end executable <--
